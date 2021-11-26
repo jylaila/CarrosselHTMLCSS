@@ -1,0 +1,103 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+#logotipo{
+width: 50%;
+position: relative;
+top: 0;
+left: 0;
+}
+
+#logotipo img{
+    width: 300px;
+}
+
+#redessociais{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li img{
+    width: 28px;
+}
+
+ul li{
+    float: left;
+}
+
+ul li a{
+    display: block;
+    padding-left: 10px;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+    overflow:hidden ;
+    text-align: center;
+}
+
+.slides{
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb{
+    background-color: rgb(113, 233, 149);
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.slides > div{
+    scroll-snap-align: right;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.slides img{
+    position: absolute;
+    object-fit:cover ;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner>a{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(207, 78, 56);
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    color: white;
+    }
+
+.banner>a:hover{
+    background-color: brown ;
+}
